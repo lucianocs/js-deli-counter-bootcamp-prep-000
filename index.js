@@ -7,11 +7,6 @@ function takeANumber(name){
   }else {
     katzDeli.push(name)
   }
-
-
-    
-
-  
-
-
 }
+
+

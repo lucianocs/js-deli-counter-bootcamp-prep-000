@@ -11,13 +11,6 @@ return 'Welcome, '+name+'. You are number '+(katzDeli.length) +' in line.'
 }
 
 
-/*
-2. Build a function `nowServing`. This function should return the first person in line
- and then remove that individual from the line. If there is nobody in line,
-  it should return "There is nobody waiting to be served!"
-
-*/
-
 function nowServing(katzDeli){
 
   if(katzDeli.length > 0){
@@ -27,4 +20,22 @@ function nowServing(katzDeli){
   }else {
     return  "There is nobody waiting to be served!"
   }
+}
+
+//  3. Build a function `currentLine` that returns the current line. For example, 
+// if `katzDeliLine` is currently `["Ada", "Grace"]`, `currentLine(katzDeliLine)`
+// would return `"The line is currently: 1. Ada, 2. Grace"`.  If there is nobody
+// in line, it should return `"The line is currently empty."`
+
+function currentLine(katzDeli){
+  var line = "The line is currently: "
+  var i
+
+  for(i = 1;i == line.length;i++ ){
+    line = line +  i.toString() + '. '+katzDeli[i-1]+', '
+    
+  }
+
+
+  
 }

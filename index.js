@@ -20,10 +20,11 @@ return 'Welcome, '+name+'. You are number '+(katzDeli.length) +' in line.'
 
 function nowServing(katzDeli){
 
-  if(katzDeli.length == 0){
+  if(katzDeli.length > 0){
     var person = katzDeli[0]
+    person.shift()
     return 'Currently serving '+person+'.';
   }else {
     return  "There is nobody waiting to be served!"
-  }   
+  }
 }

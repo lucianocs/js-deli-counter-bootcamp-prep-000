@@ -30,9 +30,10 @@ function nowServing(katzDeli){
 function currentLine(katzDeli){
 
   var line = "The line is currently: "
+
   if(katzDeli.length > 0){
     var i
-    for(i = 1;i == line.length;i++ ){
+    for(i = 1 ; i <= katzDeli.length ; i++ ){
       line = line + toString(i) +'. '+ katzDeli[i-1] +', '
     }
   }else {

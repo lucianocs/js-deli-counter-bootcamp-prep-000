@@ -33,7 +33,7 @@ function currentLine(katzDeli){
   if(katzDeli.length > 0){
     var i
     for(i = 1;i == line.length;i++ ){
-      line = line +  i.toString() + '. '+katzDeli[i-1]+', '
+      line = line +  i + '. '+katzDeli[i-1]+', '
     }
   }else {
     line = "The line is currently empty."

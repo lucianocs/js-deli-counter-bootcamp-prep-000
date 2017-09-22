@@ -34,7 +34,10 @@ function currentLine(katzDeli){
   if(katzDeli.length > 0){
     var i
     for(i = 1 ; i <= katzDeli.length ; i++ ){
-      line = line + i +'. '+ katzDeli[i-1] +', '
+      line = line + i +'. '+ katzDeli[i-1]
+      if (i < katzDeli.length){
+        line = line + ', '
+      }
     }
   }else {
     line = "The line is currently empty."

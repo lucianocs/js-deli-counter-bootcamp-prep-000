@@ -7,5 +7,5 @@ function takeANumber(katzDeli,name){
   }else {
     katzDeli.push(name)
   }
-return 'Welcome, '+ +'. You are number '+(katzDeli.length) +' in line.'  
+return 'Welcome, '+ +'. You are number '+(katzDeli.length) +' in line.'
 }

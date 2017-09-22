@@ -28,9 +28,9 @@ function nowServing(katzDeli){
 // in line, it should return `"The line is currently empty."`
 
 function currentLine(katzDeli){
-  
+
   var line = "The line is currently: "
-  if(katzDeli.length > 0){       
+  if(katzDeli.length > 0){
     var i
     for(i = 1;i == line.length;i++ ){
       line = line +  i.toString() + '. '+katzDeli[i-1]+', '
